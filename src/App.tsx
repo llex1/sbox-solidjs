@@ -1,11 +1,14 @@
 import type { Component } from 'solid-js';
+import { Router } from '@solidjs/router'
 
 import styles from './App.module.css';
 
 const App: Component = () => {
   return (
-    <div class={styles.App}>
-    </div>
+    <Router>
+      <div class={styles.App}>
+      </div>
+    </Router>
   );
 };
 
