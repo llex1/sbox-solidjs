@@ -7,9 +7,8 @@ import Auth from './components/Auth/Auth';
 const App: Component = () => {
   return (
     <Router>
-      <Route path="/users" component={Auth} />
-      <div class={styles.App}>
-      </div>
+      <Auth/>
+      {/* <Route path="/" component={Auth} /> */}
     </Router>
   );
 };

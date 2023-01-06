@@ -1,10 +1,12 @@
 import { Component } from "solid-js";
 
-const Auth:Component = () => {
+import { S } from './Auth.styled'
+
+const Auth: Component = () => {
   return (
-    <div>
-      Login page!
-    </div>
+    <S.AuthBox>
+        Login page!
+    </S.AuthBox>
   )
 }
 
