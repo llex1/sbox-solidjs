@@ -1,4 +1,6 @@
+import { Button, TextField, Typography } from "@suid/material";
 import styled from "@suid/system/styled";
+
 
 export const S = {
   boxContainer:styled('div')({
@@ -9,9 +11,34 @@ export const S = {
     backgroundColor: "#232323"
   }),
   boxLogin: styled('div')({
-    padding: '2rem',
-    backgroundColor: 'lightblue'
-  })
+    display: 'flex',
+    flexDirection: 'column',
+    borderRadius: '1rem',
+    padding: '4rem 2rem',
+    backgroundColor: 'lightblue',
+    "@media (min-width:640px)": {
+      backgroundColor: '#f1f1f1',
+   },
+  }),
+  title: styled(Typography)(() => ({
 
-
+  })),
+  boxForm: styled(TextField)((theme) => ({
+    minWidth: '350px',
+    '.MuiOutlinedInput-input': {
+      color: '#232323',
+    },
+    ":hover": {
+      cursor: 'pointer'
+    },
+  })),
+  boxButton: styled('div')({
+    padding: '1rem 0',
+    display: 'flex'
+  }),
+  button: styled(Button)(()=>({
+    width: '100%',
+    paddingTop: '.7rem',
+    paddingBottom: '.7rem'
+  }))
 }
