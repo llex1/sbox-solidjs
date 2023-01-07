@@ -4,9 +4,11 @@ import { S } from './Auth.styled'
 
 const Auth: Component = () => {
   return (
-    <S.AuthBox>
+    <S.boxContainer>
+      <S.boxLogin>
         Login page!
-    </S.AuthBox>
+      </S.boxLogin>
+    </S.boxContainer>
   )
 }
 
