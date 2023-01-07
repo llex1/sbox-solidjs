@@ -12,5 +12,5 @@ code {
     monospace;
 }
 *,*::before,*::after {
-    //ouline: 1px dotted olive; 
+    /* outline: 1px dotted olive;  */
 }
